@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Bill Amount $" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="DWt-Jr-pOu">
+                                <rect key="frame" x="33" y="222" width="327" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="juN-mC-taF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="26"/>
+                                <textInputTraits key="textInputTraits" keyboardType="phonePad" returnKeyType="done" enablesReturnKeyAutomatically="YES" textContentType="tel"/>
+                                <connections>
+                                    <action selector="billTextField:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="8kj-0L-SoV"/>
+                                </connections>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sUU-SU-JF8">
+                                <rect key="frame" x="16" y="320" width="117" height="35"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="117" id="Gxj-Qw-m8S"/>
+                                    <constraint firstAttribute="width" secondItem="sUU-SU-JF8" secondAttribute="height" multiplier="117:35" id="nw5-ks-8ps"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" subtitle="">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="10%">
+                                            <attributes>
+                                                <color key="NSColor" red="0.96558167454408017" green="0.95000961261183536" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="16" name="Menlo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="tenTipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9D8-b2-oUK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hzy-Nc-5Xx">
+                                <rect key="frame" x="133" y="320" width="131" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="hzy-Nc-5Xx" secondAttribute="height" multiplier="131:35" id="wc2-eo-cec"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="15%">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Menlo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="fifteenTipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TAX-dz-PiJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1EI-XT-Vky">
+                                <rect key="frame" x="264" y="320" width="129" height="35"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="1EI-XT-Vky" secondAttribute="height" multiplier="129:35" id="T6v-jj-r14"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="20%">
+                                            <attributes>
+                                                <font key="NSFont" size="16" name="Menlo-Regular"/>
+                                                <font key="NSOriginalFont" size="12" name="Helvetica"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="twentyTipButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x66-Jh-oJy"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Custom Tip %" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8wl-fu-0mS">
+                                <rect key="frame" x="54" y="363" width="284" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="YZq-Xi-hgJ"/>
+                                </constraints>
+                                <color key="textColor" systemColor="systemPinkColor"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="19"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad" returnKeyType="done" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <action selector="customTipAmount:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="I1o-RZ-3Dl"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount of people:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBd-rz-bFx">
+                                <rect key="frame" x="54" y="427" width="226" height="29"/>
+                                <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="22"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cXE-ud-m3J">
+                                <rect key="frame" x="275" y="427" width="52" height="29"/>
+                                <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="52" id="0IH-oy-Kak"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="25"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Per Person: 0" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ozk-lV-fAO">
+                                <rect key="frame" x="35" y="59" width="325" height="135"/>
+                                <color key="backgroundColor" systemColor="systemTealColor"/>
+                                <color key="tintColor" red="0.96558167449999999" green="0.95000961260000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="30"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="highlightedColor" systemColor="systemIndigoColor"/>
+                                <color key="shadowColor" red="0.96558167449999999" green="0.95000961260000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g9g-Vd-BHJ">
+                                <rect key="frame" x="87" y="537" width="223" height="113"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="g9g-Vd-BHJ" secondAttribute="height" multiplier="223:113" id="Roj-Bz-DUw"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background">
+                                        <color key="backgroundColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="strokeColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </backgroundConfiguration>
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Calculate">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="0.84999999999999998" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <font key="NSFont" size="35" name="Menlo-Regular"/>
+                                                <font key="NSOriginalFont" size="30" name="Menlo-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                    <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="calculateButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SwG-X5-k9Q"/>
+                                </connections>
+                            </button>
+                            <slider opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="1" maxValue="10" maximumValueImage="10.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nbW-EZ-JXY">
+                                <rect key="frame" x="64" y="464" width="265" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="DKt-CA-DlP"/>
+                                </constraints>
+                                <color key="minimumTrackTintColor" red="0.35294118520000001" green="0.68235301969999995" blue="0.76862752440000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="thumbTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <variation key="displayGamut=sRGB-heightClass=regular-widthClass=compact">
+                                    <nil key="maximumValueImage"/>
+                                </variation>
+                                <connections>
+                                    <action selector="peopleSlider:" destination="BYZ-38-t0r" eventType="valueChanged" id="FLp-2d-CTQ"/>
+                                </connections>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.59392110201739767" green="0.86078917980194092" blue="0.70647203094660727" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="cXE-ud-m3J" secondAttribute="trailing" constant="66" id="0Ai-kw-Wxn"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nbW-EZ-JXY" secondAttribute="trailing" constant="66" id="2LD-Ey-Okq"/>
+                            <constraint firstItem="NBd-rz-bFx" firstAttribute="top" secondItem="8wl-fu-0mS" secondAttribute="bottom" constant="28" id="2WQ-Fo-RH4"/>
+                            <constraint firstItem="ozk-lV-fAO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="2ga-GX-LFq"/>
+                            <constraint firstItem="hzy-Nc-5Xx" firstAttribute="top" secondItem="DWt-Jr-pOu" secondAttribute="bottom" constant="58" id="3VJ-M7-Ugv"/>
+                            <constraint firstItem="8wl-fu-0mS" firstAttribute="top" secondItem="hzy-Nc-5Xx" secondAttribute="bottom" constant="8" symbolic="YES" id="3d3-7r-7ks"/>
+                            <constraint firstItem="g9g-Vd-BHJ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="5Zf-d4-sJW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ozk-lV-fAO" secondAttribute="trailing" constant="33" id="7IX-Ge-h0N"/>
+                            <constraint firstItem="hzy-Nc-5Xx" firstAttribute="leading" secondItem="sUU-SU-JF8" secondAttribute="trailing" id="7hF-6Q-bwa"/>
+                            <constraint firstItem="DWt-Jr-pOu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="9jn-qd-6r5"/>
+                            <constraint firstItem="g9g-Vd-BHJ" firstAttribute="top" secondItem="nbW-EZ-JXY" secondAttribute="bottom" constant="42" id="At4-3p-Apc"/>
+                            <constraint firstItem="hzy-Nc-5Xx" firstAttribute="centerX" secondItem="g9g-Vd-BHJ" secondAttribute="centerX" id="BH3-dS-y3E"/>
+                            <constraint firstItem="nbW-EZ-JXY" firstAttribute="top" secondItem="cXE-ud-m3J" secondAttribute="bottom" constant="10" id="Ebv-FN-09e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="g9g-Vd-BHJ" secondAttribute="trailing" constant="83" id="Eya-2g-E1P"/>
+                            <constraint firstItem="sUU-SU-JF8" firstAttribute="top" secondItem="DWt-Jr-pOu" secondAttribute="bottom" constant="58" id="KfY-eH-shG"/>
+                            <constraint firstItem="nbW-EZ-JXY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="LTc-zq-5Fz"/>
+                            <constraint firstItem="sUU-SU-JF8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="NYE-GQ-9K3"/>
+                            <constraint firstItem="1EI-XT-Vky" firstAttribute="leading" secondItem="hzy-Nc-5Xx" secondAttribute="trailing" id="QBG-gC-SDk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8wl-fu-0mS" secondAttribute="trailing" constant="55" id="Tho-h9-fRA"/>
+                            <constraint firstItem="8wl-fu-0mS" firstAttribute="top" secondItem="sUU-SU-JF8" secondAttribute="bottom" constant="8" symbolic="YES" id="U7p-S3-cDo"/>
+                            <constraint firstItem="NBd-rz-bFx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="V5k-1G-W6h"/>
+                            <constraint firstItem="1EI-XT-Vky" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="VRZ-Mh-NKB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="DWt-Jr-pOu" secondAttribute="trailing" constant="33" id="YRM-b1-yDw"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="g9g-Vd-BHJ" secondAttribute="bottom" constant="168" id="aYa-Sd-Eup"/>
+                            <constraint firstItem="8wl-fu-0mS" firstAttribute="top" secondItem="1EI-XT-Vky" secondAttribute="bottom" constant="8" symbolic="YES" id="bKS-TJ-Tor"/>
+                            <constraint firstItem="ozk-lV-fAO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="35" id="d21-dE-rsW"/>
+                            <constraint firstItem="nbW-EZ-JXY" firstAttribute="top" secondItem="NBd-rz-bFx" secondAttribute="bottom" constant="10" id="hA0-x8-mIb"/>
+                            <constraint firstItem="8wl-fu-0mS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="54" id="jPM-fP-PuZ"/>
+                            <constraint firstItem="1EI-XT-Vky" firstAttribute="top" secondItem="DWt-Jr-pOu" secondAttribute="bottom" constant="58" id="ka9-Pw-aIt"/>
+                            <constraint firstItem="DWt-Jr-pOu" firstAttribute="top" secondItem="ozk-lV-fAO" secondAttribute="bottom" constant="28" id="oPT-X1-2oY"/>
+                            <constraint firstItem="cXE-ud-m3J" firstAttribute="leading" secondItem="NBd-rz-bFx" secondAttribute="trailing" constant="-5" id="piv-M0-r1W"/>
+                            <constraint firstItem="cXE-ud-m3J" firstAttribute="top" secondItem="8wl-fu-0mS" secondAttribute="bottom" constant="28" id="u6c-cM-8hF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="amountOfPeopleLabel" destination="NBd-rz-bFx" id="L1X-WS-7UH"/>
+                        <outlet property="billAmountLabel" destination="DWt-Jr-pOu" id="MK5-e5-gda"/>
+                        <outlet property="calculateLabel" destination="g9g-Vd-BHJ" id="ckF-JZ-uLy"/>
+                        <outlet property="customTipLabel" destination="8wl-fu-0mS" id="WjF-6V-CCe"/>
+                        <outlet property="peopleCounterLabel" destination="cXE-ud-m3J" id="xh6-wW-vBR"/>
+                        <outlet property="peopleSliderLabel" destination="nbW-EZ-JXY" id="4TZ-XT-zmT"/>
+                        <outlet property="totalLabel" destination="ozk-lV-fAO" id="vkH-R8-vj2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="96.946564885496173" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="10.circle.fill" catalog="system" width="128" height="123"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803921568627" green="0.33725490196078434" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
